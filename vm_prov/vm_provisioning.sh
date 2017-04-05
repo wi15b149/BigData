@@ -1,3 +1,5 @@
+#!/bin/bash
+
 yum install -y wget
 
 yum install -y unzip
@@ -12,4 +14,8 @@ yum repolist
 
 
 yum install -y ambari-server
+
+ambari-server setup --silent
+
+ambari-server start
 
